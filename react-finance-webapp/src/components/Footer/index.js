@@ -1,4 +1,5 @@
 import React from "react";
+import { animateScroll as scroll } from "react-scroll";
 import {
   FooterContainer,
   FooterWrap,
@@ -24,6 +25,10 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <>
       <FooterContainer>
@@ -32,44 +37,46 @@ const Footer = () => {
             <FooterLinksWrapper>
               <FooterLinkItems>
                 <FooterLinkTitle>About Us</FooterLinkTitle>
-                <FooterLink to="/signin">How it works</FooterLink>
-                <FooterLink to="/signin">Testimonials</FooterLink>
-                <FooterLink to="/signin">Careers</FooterLink>
-                <FooterLink to="/signin">Investors</FooterLink>
-                <FooterLink to="/signin">Terms of Service</FooterLink>
+                <FooterLink to="/">How it works</FooterLink>
+                <FooterLink to="/">Testimonials</FooterLink>
+                <FooterLink to="/">Careers</FooterLink>
+                <FooterLink to="/">Investors</FooterLink>
+                <FooterLink to="/">Terms of Service</FooterLink>
               </FooterLinkItems>
               <FooterLinkItems>
                 <FooterLinkTitle>Videos</FooterLinkTitle>
-                <FooterLink to="/signin">Submit Video</FooterLink>
-                <FooterLink to="/signin">Ambassadors</FooterLink>
-                <FooterLink to="/signin">Agency</FooterLink>
-                <FooterLink to="/signin">Influencer</FooterLink>
-                <FooterLink to="/signin">Tutorials</FooterLink>
+                <FooterLink to="/">Submit Video</FooterLink>
+                <FooterLink to="/">Ambassadors</FooterLink>
+                <FooterLink to="/">Agency</FooterLink>
+                <FooterLink to="/">Influencer</FooterLink>
+                <FooterLink to="/">Tutorials</FooterLink>
               </FooterLinkItems>
             </FooterLinksWrapper>
             <FooterLinksWrapper>
               <FooterLinkItems>
                 <FooterLinkTitle>Contact Us</FooterLinkTitle>
-                <FooterLink to="/signin">Contact</FooterLink>
-                <FooterLink to="/signin">Support</FooterLink>
-                <FooterLink to="/signin">Destinations</FooterLink>
-                <FooterLink to="/signin">Sponsorship</FooterLink>
-                <FooterLink to="/signin">Appointment</FooterLink>
+                <FooterLink to="/">Contact</FooterLink>
+                <FooterLink to="/">Support</FooterLink>
+                <FooterLink to="/">Destinations</FooterLink>
+                <FooterLink to="/">Sponsorship</FooterLink>
+                <FooterLink to="/">Appointment</FooterLink>
               </FooterLinkItems>
               <FooterLinkItems>
                 <FooterLinkTitle>Business</FooterLinkTitle>
-                <FooterLink to="/signin">Credit</FooterLink>
-                <FooterLink to="/signin">Database</FooterLink>
-                <FooterLink to="/signin">Investment</FooterLink>
-                <FooterLink to="/signin">Partner</FooterLink>
-                <FooterLink to="/signin">Advertising</FooterLink>
+                <FooterLink to="/">Credit</FooterLink>
+                <FooterLink to="/">Database</FooterLink>
+                <FooterLink to="/">Investment</FooterLink>
+                <FooterLink to="/">Partner</FooterLink>
+                <FooterLink to="/">Advertising</FooterLink>
               </FooterLinkItems>
             </FooterLinksWrapper>
           </FooterLinksContainer>
 
           <SocialMedia>
             <SocialMediaWrap>
-              <SocialLogo to="/">Frenance</SocialLogo>
+              <SocialLogo to="/" onClick={toggleHome}>
+                Frenance
+              </SocialLogo>
               <WebsiteRights>
                 Frenance © {new Date().getFullYear()} All rights reserved.
               </WebsiteRights>
