@@ -1,4 +1,4 @@
 # finance-webapp <br>
 
-SPA for crypto and finance company. <br>
+SPA for a blockchain solution company. <br>
 Utilizing react-router and react-scroll.
