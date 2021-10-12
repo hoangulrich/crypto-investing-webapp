@@ -5,6 +5,6 @@ Utilizing react-router and react-scroll.
 
 <br />
 
-##Preview:
+## Preview:
 
 ![Preview](/src/images/Frenance.PNG)
